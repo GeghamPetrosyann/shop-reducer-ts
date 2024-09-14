@@ -23,10 +23,10 @@ export default function ProductList() {
                     />
                     <p className="product-name">{product.name}</p>
                     <p className="product-price"><strong>{product.price}$</strong></p>
-                    <button className="product-button" onClick={() => dispatch({type:"moveToBasket", payload:product.id})}>Move</button>
+                    <button className="product-button" onClick={() => dispatch({ type: "moveToBasket", payload: product.id })}>Move</button>
                 </div>
             ))
-            
+
             }
         </div>
     </>

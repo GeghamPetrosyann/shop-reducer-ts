@@ -52,14 +52,11 @@ export const reducer = (state: IState, action: IAction) => {
                 )
             }
 
-        case "deleteProduct": 
-        return {
-            ...state,
-            basket: state.basket.filter(product => product.id != action.payload)
-        }
-
-
-
+        case "deleteProduct":
+            return {
+                ...state,
+                basket: state.basket.filter(product => product.id != action.payload)
+            }
 
         default:
             return state

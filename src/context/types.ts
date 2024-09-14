@@ -4,7 +4,7 @@ export interface IProduct {
     id: number
     name: string
     price: number
-    photo:string
+    photo: string
     count?: number
 }
 
